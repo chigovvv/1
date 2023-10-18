@@ -1,56 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* box-sizing: border-box; */
+}
+
 :root{
     font-size: 62.5%;
+    --text-color: #122947;
+    --header-style: 'Raleway', sans-serif;
+    --otstup: 30px;
 }
+
+
 
 body{
     font-family: 'Inter', sans-serif;
     font-weight:400;
     font-size: 1.6rem;
+    color: var(--text-color);
 }
 
 .heading{
-    font-family: 'Raleway', sans-serif;
+    font-family: var(--header-style);
     font-weight:500;
     font-size: 4.2rem;
 }
 
 .title{
     text-align: center;
-    font-family: 'Raleway', sans-serif;
+    font-family:  var(--header-style);
     font-weight:500;
     font-size: 2.8rem;
+}   
+
+a{
+    text-decoration: none;
+    border: 1px solid #B3BAC1;
+    padding: 3px 18px 6px 18px;
 }
 
 .active{
-    font-family: 'Inter', sans-serif;
     font-weight:400;
     font-size: 1.4rem;
+    background-color: transparent;
 }
 
 .transporter{
-    font-family: 'Inter', sans-serif;
     font-weight:400;
     font-size: 1.2rem;
+
 }
 .bestsellers{
-    font-family: 'Inter', sans-serif;
     font-weight:400;
     font-size: 1.3rem;
 }
 
-.background{
-    background-image: url("img\Rectangle 35.png");
-}
-
-
-
-
-#heading-h1{}
-
-.text{
-    
-}
-.link{
+.background1{
+    background-image: url("../img/background_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
 }
 
+.background2{
+    background-image: url("../img/background_2.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+    margin: 15px;
+}
+
+.background3{
+    background-image: url("../img/background_3.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    height: 320px;
+
+    background-size: cover; 
+}
+
+.background4{
+    background-image: url("../img/background_4.png"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; 
+}
+
+.btn{
+    border: none;
+    background-color: transparent;
+}
+
+.wrapper{
+    max-width: 100;
+    margin: 0 auto;
+    padding: 0 16px;
+}
