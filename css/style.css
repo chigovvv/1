@@ -1,9 +1,8 @@
-* {
+*{
+  box-sizing: inherit;
   margin: 0;
   padding: 0;
-  border: 0;
-  /* box-sizing: border-box; */
-}
+} 
 
 :root {
   font-size: 62.5%;
@@ -28,31 +27,50 @@ body {
 .title {
   text-align: center;
   font-family: var(--header-style);
-  font-weight: 500;
+  font-weight: 600;
   font-size: 2.8rem;
 }
+.bestsellersh1{
+  margin-top: 89px;
+}
+
 
 a {
-  text-decoration: none;
-  border: 1px solid #b3bac1;
-  padding: 3px 18px 6px 18px;
-  
+  text-decoration: none; 
+  color: #122947;
 }
+
 
 .active {
   font-weight: 400;
   font-size: 1.4rem;
-  background-color: transparent;
+  background-color: transparent; 
+  border: 1px solid #B3BAC1;
+  padding: 13px 28px 16px;
+  text-align: center;
 }
+.activeb{
+  font-size: 1.4rem;
+  font-weight: 500px;
+  padding: 13px 28px 16px;
+}
+.div1{
+  display: flex;
+  padding-top: 51px;
 
+  text-align: center;
+
+}
 .transporter {
   font-weight: 400;
   font-size: 1.2rem;
+  margin-bottom: 60px;
 }
 .bestsellers {
   font-weight: 400;
   font-size: 1.3rem;
 }
+
 
 .background1 {
   background-image: url("../img/background_1.png");
@@ -96,4 +114,68 @@ a {
   max-width: 100;
   margin: 0 auto;
   padding: 0 16px;
+}
+
+.menu{
+  margin-left: 15px;
+  margin-right: 81px;
+  border: none;
+  background-color: transparent;
+
+}
+.user{
+  margin-left: 55px;
+  margin-right: 20px;
+  border: none;
+  background-color: transparent;
+
+}
+.basket{
+  margin-right: 15;
+  border: none;
+  background-color: transparent;
+}
+.top{
+  padding-top: 30px;
+}
+.MAROON{
+  padding-top: 62px;
+  margin: 0px 0px 20px 0px;
+}
+.natur{
+  margin-bottom: 43px;
+  padding-left: 39px;
+  margin-right: 38px; 
+  line-height: 140%;
+}
+.centr{
+  text-align: center;
+}
+
+.legendproduct{
+  padding-left: 71px;
+  margin-right: 65px;
+  margin-bottom: 50px;
+  text-align: center;
+  line-height: 140%;
+}
+
+.Highbackground{
+  background-image: url("../img/backgroundmini1.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.High1{
+
+}
+.kremdlylica{
+  color: #9A9DA0;
+  padding-top: 10px;
+}
+.podrobnee{
+  padding-top: 15px;
+  border-bottom: 1px #122947 solid;
+
+  
 }
