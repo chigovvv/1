@@ -11,6 +11,8 @@
   --otstup: 30px;
 }
 
+
+
 body {
   font-family: "Inter", sans-serif;
   font-weight: 400;
@@ -31,7 +33,7 @@ body {
   font-size: 2.8rem;
 }
 .bestsellersh1{
-  margin-top: 89px;
+  margin-bottom: 21px;
 }
 
 
@@ -48,7 +50,8 @@ a {
   border: 1px solid #B3BAC1;
   padding: 13px 28px 16px;
   text-align: center;
-}
+  display: inline-block;
+} 
 .activeb{
   font-size: 1.4rem;
   font-weight: 500px;
@@ -56,15 +59,13 @@ a {
 }
 .div1{
   display: flex;
-  padding-top: 51px;
-
+  margin-top: 51px;
   text-align: center;
 
 }
 .transporter {
   font-weight: 400;
   font-size: 1.2rem;
-  margin-bottom: 60px;
 }
 .bestsellers {
   font-weight: 400;
@@ -74,9 +75,11 @@ a {
 
 .background1 {
   background-image: url("../img/background_1.png");
+  margin-top: 60px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  padding-bottom: 60px;
 }
 
 .background2 {
@@ -85,15 +88,15 @@ a {
   background-position: center;
   text-align: center;
   background-size: cover;
-  margin: 15px;
+
+  position: relative;
 }
 
 .background3 {
-  background-image: url("../img/background_3.png");
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  /* height: 320px; */
+  padding-top: 50px;
 
   background-size: cover;
 }
@@ -136,16 +139,17 @@ a {
   background-color: transparent;
 }
 .top{
-  padding-top: 30px;
+  display: flex;
+  justify-content: space-around;
 }
 .MAROON{
-  padding-top: 62px;
   margin: 0px 0px 20px 0px;
 }
 .natur{
+  display: inline-block;
   margin-bottom: 43px;
-  padding-left: 39px;
-  margin-right: 38px; 
+  text-align: center;
+  width: 80%;
   line-height: 140%;
 }
 .centr{
@@ -153,18 +157,23 @@ a {
 }
 
 .legendproduct{
-  padding-left: 71px;
-  margin-right: 65px;
+  width: 80%;
+  display: inline-block;
   margin-bottom: 50px;
   text-align: center;
-  line-height: 140%;
+  line-height: 22.4px;
 }
 
 .Highbackground{
-  background-image: url("../img/backgroundmini1.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  position: relative;
   text-align: center;
+  display: inline-block;
+  
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  margin-bottom: 40px;
 }
 .High1{
 
@@ -178,16 +187,17 @@ a {
   border-bottom: 1px #122947 solid;  
 }
 .zapolnyteanketu{
+  margin-top: 15px;
   line-height: 22.4px;
-  padding-left: 32px;
-  margin-right: 32px;
+  width: 80%;
+  display: inline-block;
+  margin-bottom: 20px;
 }
 .mistremimsy{
   font-size: 2.2rem;
   line-height: 27.5px;
   font-weight: 500;
-  padding-left: 39px;
-  margin-right: 39px;
+  width: 75%;  
 }
 .prisoedknam{
   padding-top: 80px;
@@ -195,6 +205,21 @@ a {
 }
 .podpishites{
   margin-bottom: 43px;
-  text-align: center;
+  text-align: center; 
   line-height: 22.4px;
+}
+.divHigh{
+  position: absolute;
+  bottom: 5px;
+}
+.individuxod{
+
+}
+
+.div3{
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
