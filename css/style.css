@@ -8,10 +8,25 @@
   font-size: 62.5%;
   --text-color: #122947;
   --header-style: "Raleway", sans-serif;
-  --otstup: 30px;
+
 }
 
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.ul1{
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
 
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.li1{
+  margin-right: 15px;
+}
 
 body {
   font-family: "Inter", sans-serif;
@@ -55,7 +70,15 @@ a {
 .activeb{
   font-size: 1.4rem;
   font-weight: 500px;
+  border: 1px solid #B3BAC1;
   padding: 13px 28px 16px;
+  background-color: transparent; 
+
+  position: absolute;
+  bottom: 90px;
+  display: flex;
+  justify-content: center;
+  
 }
 .div1{
   display: flex;
@@ -106,6 +129,9 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .btn {
@@ -197,10 +223,10 @@ a {
   font-size: 2.2rem;
   line-height: 27.5px;
   font-weight: 500;
-  width: 75%;  
+  width: 75%;
+  margin-top: 30px;
 }
 .prisoedknam{
-  padding-top: 80px;
   margin-bottom: 25px;
 }
 .podpishites{
@@ -212,14 +238,28 @@ a {
   position: absolute;
   bottom: 5px;
 }
-.individuxod{
 
-}
 
 .div3{
   position: relative;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
+  
+  top: 50px;
 }
+.div4{
+  position: relative;
+}
+.div5{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+.podpisatsy{
+  margin-bottom: 20px;
+}
+
