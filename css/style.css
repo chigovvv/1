@@ -92,7 +92,15 @@ a {
 }
 
 .headersection{
-  padding-block: 2em;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 20px;
+}
+
+.userbasket{
+  display: flex;
+  justify-content: space-between;
+  width: 50px;
 }
 
 .background1 {
@@ -154,21 +162,19 @@ a {
 }
 
 .menu{
-  margin-left: 15px;
-  margin-right: 81px;
+
   border: none;
   background-color: transparent;
 
 }
 .user{
-  margin-left: 55px;
-  margin-right: 20px;
+
   border: none;
   background-color: transparent;
 
 }
 .basket{
-  margin-right: 15px;
+
   border: none;
   background-color: transparent;
 }
@@ -215,7 +221,6 @@ a {
   padding-top: 10px;
 }
 .podrobnee{
-  padding-top: 15px;
   border-bottom: 1px #122947 solid;  
 }
 .zapolnyteanketu{
@@ -231,7 +236,7 @@ a {
   margin-top: 30px;
 }
 .prisoedknam{
-  margin-bottom: 25px;
+  padding: 20px 0;
 }
 .podpishites{
   margin-bottom: 43px;
@@ -240,11 +245,17 @@ a {
 }
 .divHigh{
   position: absolute;
-  bottom: 5px;
+  bottom: 10px;
 }
 
-.divpic{
+.divpic1{
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.divpic2{
+  display: flex;
+  justify-content: center;
 }
 
 .div3{
