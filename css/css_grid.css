@@ -63,18 +63,30 @@
 .schedule_2{
     /* grid-area: schedule_2; */
     grid-area: 3 / 4 / 3 / 7;
-
 }
 
 .section2{
     display: grid;
-    height: 40vh;
     grid-gap: 1rem;
     grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    padding: 20px;
 }
 
-.div1{
+.div_1{
     display: grid;
     place-items: center;
-    background: lightpink;
+    border: solid 1px;
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,auto); */
+    grid-template-areas: 
+    'a';
+
 }
+.piccc{
+    max-width: 100%;
+    grid-area: a;
+}
+.aaa{
+    grid-area: a;
+}
+
