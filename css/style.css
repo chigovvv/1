@@ -334,6 +334,10 @@ a {
 .card{
   margin: 0 15px;
 }
+
+.individwrapper{
+
+}
 @media screen and (min-width: 0px) and (max-width: 759px){
   .title{
     text-align: center;
@@ -345,7 +349,7 @@ a {
     display: none;
   }
   .background2{
-    height: 350px;
+    height: 400px;
     text-align: center;
   }
   .individuhod_p{
@@ -353,10 +357,9 @@ a {
   }
   .div3{
     left: 50%;
+    margin-top: 15px;
   }
-  .individwrapper{
-    display: none;
-  }
+
 }
 @media screen and (min-width: 760px) and (max-width: 1366px){
 body{
@@ -420,15 +423,13 @@ body{
 .background2{
   text-align: left;
 }
-.individuhod_p{
-
-}
 .div3{
   top: 10%;
-  right: -30%;
+  right: -200px;
   transform: translateX(-50%);
 }
 .individwrapper{
-
+  margin-left: 30px;
+  width: 60%;
 }
 }
