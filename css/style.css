@@ -5,6 +5,8 @@
 } 
 html {
   box-sizing: border-box;
+  overflow-x: hidden;
+  height: 100%;
 }
 *:before, *:after {
   box-sizing: inherit;
@@ -19,8 +21,8 @@ html {
 
 ul{
   list-style-type: none;
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
 }
 
 
@@ -29,6 +31,8 @@ body {
   font-weight: 400;
   font-size: 1.6rem;
   color: var(--text-color);
+  overflow-x: hidden;
+
 }
 
 .heading {
@@ -38,7 +42,6 @@ body {
 }
 
 .title {
-  text-align: center;
   font-family: var(--header-style);
   font-weight: 600;
   font-size: 2.8rem;
@@ -60,6 +63,7 @@ a {
   background-color: transparent; 
   border: 1px solid #B3BAC1;
   padding: 13px 28px 16px;
+  display: inline-block;
 
 } 
 .activeb{
@@ -78,7 +82,7 @@ a {
   display: flex;
   margin-top: 51px;
   text-align: center;
-  justify-content: center;
+  justify-content: space-around;
 
 }
 .transporter {
@@ -117,11 +121,10 @@ a {
 }
 
 .background2 {
+  position: relative;
   padding: 30px 0;
   background-color:rgb(244, 241, 237);
-  text-align: center;
-
-  position: relative;
+  margin: 0 15px;
 }
 
 .background3 {
@@ -198,23 +201,14 @@ a {
   width: 80%;
   display: inline-block;
   margin-bottom: 50px;
-  text-align: center;
   line-height: 22.4px;
 }
 
 .Highbackground{
   position: relative;
-  text-align: center;
-  display: inline-block;
-  
   display: flex;
   justify-content: center;
-  /* align-items: center; */
-
   margin-bottom: 40px;
-}
-.High1{
-
 }
 .kremdlylica{
   color: #9A9DA0;
@@ -246,6 +240,7 @@ a {
 .divHigh{
   position: absolute;
   bottom: 10px;
+  text-align: center;
 }
 
 .divpic1{
@@ -259,13 +254,8 @@ a {
 }
 
 .div3{
-  position: relative;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  top: 100px;
+  position: absolute;
+  transform: translateX(-50%);;
 }
 .div4{
   position: relative;
@@ -344,9 +334,101 @@ a {
 .card{
   margin: 0 15px;
 }
-/* .sss{
-  max-width: 400px;
+@media screen and (min-width: 0px) and (max-width: 759px){
+  .title{
+    text-align: center;
+  }
+  .legendproduct{
+    text-align: center;
+  }
+  .bestsellers_grid{
+    display: none;
+  }
+  .background2{
+    height: 350px;
+    text-align: center;
+  }
+  .individuhod_p{
+    display: none;
+  }
+  .div3{
+    left: 50%;
+  }
+  .individwrapper{
+    display: none;
+  }
+}
+@media screen and (min-width: 760px) and (max-width: 1366px){
+body{
+  font-size: 1.8rem;
+}
+.title{
+  font-size: 3.2rem;
+}
+.headersection{
+  padding: 20px 60px;
+}
+  .MAROON{
+  font-size: 5.4rem;
+}
+  .section_1_div{
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 40%;
+}
+  .section_1_img{
+  width: 245px;
+}
+.transporter{
+  font-size: 1.6rem;
+}
+
+.bestselersection{
+  display: none;
+}
+.bestsellers_grid{
+  display: grid;
+  grid-gap: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 40px 30px;
+
+}
+.bestsellers_div{
+  grid-area: 1 / 1 / 2 / 2;
+}
+.Highbackground{
+  grid-area: 1 / 2 / 2 / 3;
+  margin-bottom: 0;
+}
+.Restbackground{
+  position: relative;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-} */
+  grid-area: 1 / 3 / 2 / 4;
+}
+.control{
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  grid-column-start: 3;
+  justify-self: center;
+}
+.scaleX{
+  transform: scaleX(-1);
+}
+.background2{
+  text-align: left;
+}
+.individuhod_p{
+
+}
+.div3{
+  top: 10%;
+  right: -30%;
+  transform: translateX(-50%);
+}
+.individwrapper{
+
+}
+}
