@@ -121,9 +121,7 @@ a {
 }
 
 .background2 {
-  position: relative;
   padding: 30px 0;
-  background-color:rgb(244, 241, 237);
   margin: 0 15px;
 }
 
@@ -252,9 +250,9 @@ a {
   justify-content: center;
 }
 
-.div3{
-  position: absolute;
-  transform: translateX(-50%);;
+.individuhod_pic{
+  position: relative;
+  /* transform: translateX(-50%); */
 }
 .div4{
   position: relative;
@@ -333,8 +331,15 @@ a {
 .card{
   margin: 0 15px;
 }
-.prisoedknam_div{
+.prisoedknam_div_1{
   margin-top: 60px;
+}
+.individwrapper{
+  position: absolute;
+  max-width: 670px;
+  background-color: rgb(244, 241, 237);
+  padding: 3em;
+  min-width: 400px;
 }
 @media screen and (min-width: 0px) and (max-width: 759px){
   .title{
@@ -349,13 +354,16 @@ a {
   .background2{
     height: 400px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+
   }
   .individuhod_p{
     display: none;
   }
   .div3{
     left: 50%;
-    margin-top: 15px;
+    bottom: -200px;
   }
 
 }
@@ -418,16 +426,29 @@ body{
 .scaleX{
   transform: scaleX(-1);
 }
-.background2{
-  text-align: left;
-}
 .div3{
-  top: 10%;
-  right: -200px;
-  transform: translateX(-50%);
+  flex-shrink: 0;
 }
 .individwrapper{
-  margin-left: 30px;
-  width: 60%;
+  width: 670px
+}
+.divuhod{
+  width: 270px;
+}
+.prisoedknam{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.prisoedknam_div_2{
+  grid-area: 1 / 1 / 2 / 2;
+}
+.prisoedknam_div_1{
+  grid-area: 1 / 2 / 2 / 3;
+}
+.individuhod_pic{
+  left: 500px;
+  width: 300px;
+  top: 55px;
+  /* transform: translateX(-50%); */
 }
 }
