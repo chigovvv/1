@@ -232,7 +232,6 @@ a {
 }
 .podpishites{
   margin-bottom: 43px;
-  text-align: center; 
   line-height: 22.4px;
 }
 .divHigh{
@@ -354,8 +353,6 @@ a {
   .background2{
     height: 400px;
     text-align: center;
-    display: flex;
-    justify-content: center;
 
   }
   .individuhod_p{
@@ -365,7 +362,15 @@ a {
     left: 50%;
     bottom: -200px;
   }
-
+  .zapolnyteanketu_desk{
+    display: none;
+  }
+  .individuhod_pic{
+    bottom: -230px;
+  }
+  .podpishites{
+    text-align: center;
+  }
 }
 @media screen and (min-width: 760px) and (max-width: 1366px){
 body{
@@ -389,8 +394,11 @@ body{
   .section_1_img{
   width: 245px;
 }
-.transporter{
+.transporter {
+  display: flex;
   font-size: 1.6rem;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .bestselersection{
@@ -437,6 +445,7 @@ body{
 }
 .prisoedknam{
   display: grid;
+  text-align: left;
   grid-template-columns: repeat(2, 1fr);
 }
 .prisoedknam_div_2{
@@ -450,5 +459,9 @@ body{
   width: 300px;
   top: 55px;
   /* transform: translateX(-50%); */
+}
+.zapolnyteanketu_desk{
+  line-height: 22.4px;
+  margin-bottom: 20px;
 }
 }
