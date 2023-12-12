@@ -75,7 +75,6 @@
 .div_1{
     display: grid;
     place-items: center;
-    border: solid 1px;
     /* grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3,auto); */
     grid-template-areas: 

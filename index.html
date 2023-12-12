@@ -18,10 +18,17 @@
     <header class="headersection">
       <button class="menu"><img src="img/menu.svg" alt="#" /></button>
       <img src="img/MAROON.svg" alt="#" />
-      <p class="userbasket">
-        <button class="user"><img src="img/user.svg" alt="#" /></button>
-        <button class="basket"><img src="img/basket.svg" alt="#" /></button>
-      </p>
+      <div class="header_contact_div_wrapper">
+        <div class="header_contact_div">
+          <p class="header_contact">Каталог</p>
+          <p class="header_contact">О нас</p>
+          <p class="header_contact">Контакты</p>
+        </div>
+        <p class="userbasket">
+          <button class="user"><img src="img/user.svg" alt="#" /></button>
+          <button class="basket"><img src="img/basket.svg" alt="#" /></button>
+        </p>
+      </div>
     </header>
     <main>
       <section class="background1">
@@ -44,20 +51,32 @@
         </div>
       </section>
       <section id="Бестселлеры" class="centr bestselersection">
-        <h2 class="title bestsellersh1">Бестселлеры</h2>
-        <p class="legendproduct">
-          Легендарные продукты, завоевавшие любовь наших клиентов
-        </p>
-        <div class="Highbackground">
-          <img src="img/backgroundmini1.png" alt="">
+        <div >
+          <h2 class="title bestsellersh1">Бестселлеры</h2>
+          <p class="legendproduct">
+            Легендарные продукты, завоевавшие любовь наших клиентов
+          </p>
+          <a href="" class="active lookall1">Смотреть все</a>
+        </div>
+        <div class="obshiydiv">
+          <div class="cremdiv"><img src="img/крем_1.png" alt="" class="bestdiv"><div class="divHigh aboba"><h3 class="High1 ">High</h3><p class="bestsellers kremdlylica">крем для лица</p><a href="" class="bestsellers podrobnee"> Подробнее</a></div></div>
+          <div class="cremdiv"><img src="img/крем_2.png" alt="" class="bestdiv"><div class="divHigh aboba"><h3 class="High1 ">High</h3><p class="bestsellers kremdlylica">крем для лица</p><a href="" class="bestsellers podrobnee"> Подробнее</a></div></div>
+          <div class="cremdiv"><img src="img/крем_3.png" alt="" class="bestdiv"><div class="divHigh aboba"><h3 class="High1 ">High</h3><p class="bestsellers kremdlylica">крем для лица</p><a href="" class="bestsellers podrobnee"> Подробнее</a></div></div>
+          <div class="cremdiv"><img src="img/крем_4.png" alt="" class="bestdiv"><div class="divHigh aboba"><h3 class="High1 ">High</h3><p class="bestsellers kremdlylica">крем для лица</p><a href="" class="bestsellers podrobnee"> Подробнее</a></div></div>
+        </div>
+        <div class="control">
+          <img src="img/arrow.svg" alt="" class="scaleX arrow"> <img src="img/arrow.svg" alt="" class="arrow">
+        </div>
+        <!-- <div class="Highbackground">
+          <img src="img/крем_1.png" alt="">
           <div class="divHigh">
             <h3 class="High1">High</h3>
             <p class="bestsellers kremdlylica">крем для лица</p>
             <a href="" class="bestsellers podrobnee"> Подробнее</a>
           </div>
-        </div>
-        <a href="" class="active">Смотреть все</a>
-      </section>
+        </div> -->
+        <a href="" class="active lookall2">Смотреть все</a>
+      <!-- </section>
       <section class="bestsellers_grid">
         <div class="bestsellers_div">
           <h2 class="title bestsellersh1">Бестселлеры</h2>
@@ -85,6 +104,7 @@
         <div class="control">
           <img src="img/arrow.svg" alt="" class="scaleX"> <img src="img/arrow.svg" alt="">
         </div>
+      </section> -->
       </section>
       <section class="background2">
         <div class="individwrapper">
@@ -162,11 +182,11 @@
       <div class="footdiv">
         <img src="img/MAROON.svg" alt="" class="maroonh"/>
         <p class="footerp">
-          <a href="#">Каталог</a>
+          <a href="#" class="footera">Каталог</a>
           <a href="#">О нас</a>
         </p>
         <p class="footerp">
-          <a href="#">Магазины</a>
+          <a href="#" class="footera">Магазины</a>
           <a href="#">Контакты</a>
         </p>
         <div class="footerpic">
@@ -176,8 +196,10 @@
         </div>
       </div>
       <a href="grid.html"> grid</a>
-      <p class="end"> MAROON 2020 Все права защищены</p>
-      <p class="end">Политика конфиденциальности</p>
+      <div class="enddiv">
+        <p class="end"> MAROON 2020 Все права защищены</p>
+        <p class="end">Политика конфиденциальности</p>
+      </div>
     </footer>
   </body>
 </html>

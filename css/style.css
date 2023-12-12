@@ -118,6 +118,7 @@ a {
 
 .bestselersection{
   padding: 40px 0;
+  text-align: start;
 }
 
 .background2 {
@@ -129,7 +130,7 @@ a {
   background-repeat: no-repeat;
   background-position: center;
   text-align: center;
-  margin-top: 100px;
+  margin-top: 150px;
   padding: 25px;
   background-size: cover;
 
@@ -193,8 +194,6 @@ a {
 }
 
 .legendproduct{
-  width: 80%;
-  display: inline-block;
   margin-bottom: 50px;
   line-height: 22.4px;
 }
@@ -232,9 +231,7 @@ a {
   line-height: 22.4px;
 }
 .divHigh{
-  position: absolute;
-  bottom: 10px;
-  text-align: center;
+  margin-bottom: 30px;
 }
 
 .divpic1{
@@ -324,7 +321,6 @@ a {
 
 .end{
   color: #959595;
-  display: flex;
   margin-left: 15px;
   margin-bottom: 5px;
 }
@@ -336,6 +332,7 @@ a {
 }
 .prisoedknam_div_1{
   margin-top: 60px;
+  padding-bottom: 30px;
 }
 .individwrapper{
   position: absolute;
@@ -347,12 +344,32 @@ a {
 .absolutemap{
   background-color: rgb(244, 241, 237);
   padding: 20px;
+  text-align: left;
 }
 .footdiv{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   margin-left: 20px;
+}
+.bestdiv{
+  max-width: 100%;
+  grid-area: a;
+}
+.cremdiv{
+  display: grid;
+  align-items: end;
+  grid-template-areas: 'a';
+  justify-content: center;
+}
+.aboba{
+  grid-area: a;
+}
+.obshiydiv{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  padding: 20px 0;
 }
 
 @media screen and (min-width: 0px) and (max-width: 759px){
@@ -393,6 +410,15 @@ a {
     margin-bottom: 10px;
     word-spacing: 10px;
   }
+  .lookall1{
+    display: none;
+  }
+  .control{
+    display: none;
+  }
+  .header_contact_div{
+    display: none;
+  }
 }
 @media screen and (min-width: 760px) and (max-width: 1366px){
 body{
@@ -422,16 +448,15 @@ body{
   width: 100%;
   justify-content: space-between;
 }
-
-.bestselersection{
-  display: none;
-}
 .bestsellers_grid{
   display: grid;
   grid-gap: 3rem;
   grid-template-columns: repeat(3, 1fr);
   padding: 40px 30px;
 
+}
+.header_contact_div{
+  display: none;
 }
 .bestsellers_div{
   grid-area: 1 / 1 / 2 / 2;
@@ -448,13 +473,12 @@ body{
 }
 .control{
   display: flex;
-  width: 40%;
-  justify-content: space-around;
-  grid-column-start: 3;
-  justify-self: center;
+  /* width: 40%; */
+  justify-content: flex-end;
 }
 .scaleX{
   transform: scaleX(-1);
+
 }
 .div3{
   flex-shrink: 0;
@@ -469,6 +493,7 @@ body{
   display: grid;
   text-align: left;
   grid-template-columns: repeat(2, 1fr);
+  grid-gap: 4rem;
 }
 .prisoedknam_div_2{
   grid-area: 1 / 1 / 2 / 2;
@@ -512,7 +537,156 @@ body{
   flex-direction: row;
   align-items: center;
 }
+.arrow{
+  margin: 0 30px;
+}
 .maroonh{
   margin-bottom: 0px;
 }
+.footera{
+  margin-right: 40px;
+}
+.enddiv{
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 50px;
+  margin-bottom: 5px;
+}
+.end{
+  margin-right: 0px;
+  margin-bottom: 0px;
+}
+.lookall2{
+  display: none;
+}
+.bestdiv0{
+  text-align: start;
+}
+}
+@media screen and (min-width: 1366px){
+  body{
+    font-size: 1.8rem;
+  }
+  .title{
+    font-size: 3.2rem;
+  }
+  .menu{
+    display: none;
+  }
+  .header_contact{
+    margin-right: 30px;
+  }
+  .header_contact_div{
+    display: flex;
+  }
+  .header_contact_div_wrapper{
+    display: flex;
+  }
+  .headersection {
+    padding: 20px 100px;
+  }
+  .section_1_div{
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    width: 40%;
+  }
+  .div1{
+    display: flex;
+    margin-top: 51px;
+    text-align: center;
+    justify-content: space-around;
+  }
+  .section_1_img{
+    width: 245px;
+  }
+  .transporter {
+    display: flex;
+    font-size: 1.6rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .MAROON {
+    font-size: 5.4rem;
+  }
+  .lookall2{
+    display: none;
+  }
+  .control {
+    display: flex;
+    /* width: 40%; */
+    justify-content: flex-end;
+  }
+  .zapolnyteanketu_desk{
+    line-height: 22.4px;
+    margin-bottom: 20px;
+  }
+  .individwrapper{
+    width: 670px;
+  }
+  .divuhod{
+    width: 270px;
+  }
+  .individuhod_pic {
+    left: 500px;
+    width: 350px;
+    top: 25px;
+  }
+  .prisoedknam{
+    display: grid;
+    text-align: left;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 4rem;
+  }
+  .prisoedknam_div_2{
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  .prisoedknam_div_1{
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .prisoedknam_div_2{
+    margin-left: 30px;
+  }
+  .imgmap{
+    position: relative;
+    left: 500px;
+    top: 20px;
+    height: 300px;
+    width: 450px;
+  }
+  .backgroundfooter{
+    margin-top: 80px;
+  }
+  .footdiv{
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 0px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .absolutemap{
+    position: absolute;
+    width: 670px;
+    padding: 3em;
+  }
+  .footera{
+    margin-right: 40px;
+  }
+  .enddiv{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 50px;
+    margin-bottom: 5px;
+  }
+  .end{
+    margin-right: 0px;
+    margin-bottom: 0px;
+  }
+  .maroonh{
+    margin-bottom: 0px;
+  }
+  .catalogmagazcont{
+    word-spacing: 10px;
+  }
+
 }
