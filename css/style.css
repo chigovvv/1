@@ -138,10 +138,7 @@ a {
 
 
 .background4 {
-  background-color:rgb(244, 241, 237);
-
   margin-left: 15px;
-  margin-right: 15px;
   padding-top: 20px;
 }
 
@@ -301,7 +298,13 @@ a {
   margin-top: 15px;
   margin-bottom: 40px;
 }
-
+.footerpic{
+  display: flex;
+  /* margin-right: 20px; */
+  align-content: center;
+  justify-content: space-between;
+  width: 100px;
+}
 .ul3{
   margin-left: 15px;
   margin-top: 20px;
@@ -315,7 +318,8 @@ a {
 }
 
 .maroonh{
-  margin-left: 15px;
+  margin-bottom: 20px;
+  width: 100px;
 }
 
 .end{
@@ -340,6 +344,17 @@ a {
   padding: 3em;
   min-width: 400px;
 }
+.absolutemap{
+  background-color: rgb(244, 241, 237);
+  padding: 20px;
+}
+.footdiv{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
 @media screen and (min-width: 0px) and (max-width: 759px){
   .title{
     text-align: center;
@@ -370,6 +385,13 @@ a {
   }
   .podpishites{
     text-align: center;
+  }
+  .nopic{
+    display: none;
+  }
+  .footerp{
+    margin-bottom: 10px;
+    word-spacing: 10px;
   }
 }
 @media screen and (min-width: 760px) and (max-width: 1366px){
@@ -463,5 +485,34 @@ body{
 .zapolnyteanketu_desk{
   line-height: 22.4px;
   margin-bottom: 20px;
+}
+.nopic{
+  display: none;
+}
+.absolutemap{
+  position: absolute;
+  width: 670px;
+  padding: 3em;
+
+}
+.imgmap{
+  position: relative;
+  left: 500px;
+  top: 20px;
+  height: 300px;
+  width: 450px;
+}
+.backgroundfooter{
+  margin-top: 80px;
+}
+.footdiv{
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: 0px;
+  flex-direction: row;
+  align-items: center;
+}
+.maroonh{
+  margin-bottom: 0px;
 }
 }
