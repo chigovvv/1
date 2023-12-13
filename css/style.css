@@ -688,5 +688,10 @@ body{
   .catalogmagazcont{
     word-spacing: 10px;
   }
-
+  .scaleX{
+    transform: scaleX(-1);
+  }
+  .arrow{
+    margin: 0 30px;
+  }
 }
