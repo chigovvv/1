@@ -680,6 +680,7 @@ body{
   .backgroundfooter{
     margin-top: 80px;
   }
+  
   .footdiv{
     display: flex;
     justify-content: space-evenly;

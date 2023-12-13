@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="form.css" />
 </head>
 <body>
-    <header>
+    <header class="headersection">
         <button class="menu"><img src="img/menu.svg" alt="#" /></button>
         <img src="img/MAROON.svg" alt="#" />
         <div class="header_contact_div_wrapper">
@@ -23,10 +23,62 @@
             </p>
         </div>
     </header>
-    <section>
-        
+    <section class="form_section">
+        <form class="form" action="//httpbin.org/post" method="post">
+            <h1 class="form_title">Вход</h1>
+            <div class="form_div_wrapper">
+                <div class="form_group">
+                    <input type="text" class="form_input" placeholder="Name" required >
+                    <label class="form_label">Name(обязательно)</label>
+                </div>
+                
+                <div class="form_group">
+                    <input type="text" class="form_input" placeholder="Last Name" required  >
+                    <label class="form_label">Last Name(обязательно)</label>
+                </div>
+                <div class="form_div_wrapper">
+                    <label for="" class="form_wrapper">Пол</label>
+                    <p>
+                        <input type="radio" class="form_radio" name="pol"> Женский
+                        <input type="radio" class="form_radio" name="pol"> Мужской
+                    </p>
+                </div>
+            </div>
+            <div class="form_div_wrapper">
+                <div class="form_group">
+                    <input class="form_input" placeholder="E-mail" required >
+                    <label class="form_label">E-mail(обязательно)</label>
+                </div>
+                <div class="form_group">
+                    <input type="password" class="form_input" placeholder="Password" required   >
+                    <label class="form_label">Password(обязательно)</label>
+                </div>
+                <div class="form_div_wrapper">
+                    <label for=""  class="form_wrapper">Удобное время для связи</label>
+                    <p class="time"> 
+                        <p class="form_time_p"><input type="checkbox" name="sub"> 6:00 - 12:00</p>
+                        <p class="form_time_p"><input type="checkbox" name="sub"> 12:00 - 18:00</p>
+                        <p class="form_time_p"><input type="checkbox" name="sub"> 18:00 - 00:00</p>
+                        <p class="form_time_p"><input type="checkbox" name="sub"> 00:00 -6:00</p>
+                    </p>
+                </div>
+                <p class="form_wrapper">
+                    <label for="">Date</label>
+                    <input type="date" class="date">
+                </p>
+            </div>
+            <!-- <p  class="form_wrapper"> 
+                <label for="">Time</label>
+                <input type="time" class="time">
+            </p> -->
+            <div class="form_div_button">
+                <button type="submit" class="form_button">Войти</button>
+                <button type="reset" class="form_button">Сброс</button>
+            </div>
+        </form>
     </section>
-    <footer class="nav">
+
+    <footer class="backgroundfooter nav">
         <div class="footdiv">
             <img src="img/MAROON.svg" alt="" class="maroonh"/>
             <p class="footerp">
