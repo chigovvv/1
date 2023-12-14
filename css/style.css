@@ -16,9 +16,9 @@ a:active{
   color: #afded7;
 }
 
-:focus{
+/* :focus{
   color: rgb(81, 175, 246);
-}
+} */
 
 .active:hover,
 .activeb:hover{

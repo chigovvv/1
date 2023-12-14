@@ -33,7 +33,7 @@ input::placeholder {
 
 }
 .time p:nth-child(even){
-    color: red;
+    color: orange;
 }
 .checked:checked + span{
     color: green;
