@@ -25,36 +25,44 @@
     </header>
     <section class="form_section">
         <form class="form" action="//httpbin.org/post" method="post">
-            <h1 class="form_title">Вход</h1>
-            <div class="form_div_wrapper">
+            <h1 class="form_title">Форма</h1>
+            <fieldset class="form_div_wrapper"> 
                 <div class="form_group">
-                    <input type="text" class="form_input" placeholder="Name" required >
-                    <label class="form_label">Name(обязательно)</label>
+                    <input type="text" class="form_input" placeholder="Иван" required >
+                    <label class="form_label">Имя*</label>
                 </div>
                 
                 <div class="form_group">
-                    <input type="text" class="form_input" placeholder="Last Name" required  >
-                    <label class="form_label">Last Name(обязательно)</label>
+                    <input type="text" id="name" class="form_input" placeholder="Иванов" required  >
+                    <label class="form_label" for="#name">Фамилия*</label>
                 </div>
-                <div class="form_div_wrapper">
-                    <label for="" class="form_wrapper">Пол</label>
+                <div class="form_div_wrapper div_pol centr">
+                    <label for="" class="pol form_label">Пол*</label>
                     <p>
                         <input type="radio" class="form_radio" name="pol"> Женский
                         <input type="radio" class="form_radio" name="pol"> Мужской
                     </p>
                 </div>
-            </div>
+                <div class="form_group">
+                    <input id="date" type="date" class="date form_input">
+                    <label for="#date" class="form_label">Дата рождения*</label>
+                </div>
+            </fieldset>
             <div class="form_div_wrapper">
                 <div class="form_group">
-                    <input class="form_input" placeholder="E-mail" required >
-                    <label class="form_label">E-mail(обязательно)</label>
+                    <input class="form_input" placeholder="example@example.com" required >
+                    <label class="form_label">E-mail*</label>
                 </div>
                 <div class="form_group">
-                    <input type="password" class="form_input" placeholder="Password" required   >
-                    <label class="form_label">Password(обязательно)</label>
+                    <input type="password" class="form_input" placeholder="Password" required>
+                    <label class="form_label">Пароль*</label>
+                </div>
+                <div class="form_group">
+                    <input type="tel" class="form_input" placeholder="+79999999999" required>
+                    <label class="form_label">Телефон*</label>
                 </div>
                 <div class="form_div_wrapper">
-                    <label for=""  class="form_wrapper">Удобное время для связи</label>
+                    <label for=""  class="form_wrapper">Удобное время для связи:</label>
                     <p class="time"> 
                         <p class="form_time_p"><input type="checkbox" name="sub"> 6:00 - 12:00</p>
                         <p class="form_time_p"><input type="checkbox" name="sub"> 12:00 - 18:00</p>
@@ -62,17 +70,13 @@
                         <p class="form_time_p"><input type="checkbox" name="sub"> 00:00 -6:00</p>
                     </p>
                 </div>
-                <p class="form_wrapper">
-                    <label for="">Date</label>
-                    <input type="date" class="date">
-                </p>
             </div>
             <!-- <p  class="form_wrapper"> 
                 <label for="">Time</label>
                 <input type="time" class="time">
             </p> -->
             <div class="form_div_button">
-                <button type="submit" class="form_button">Войти</button>
+                <button type="submit" class="form_button">Отправить</button>
                 <button type="reset" class="form_button">Сброс</button>
             </div>
         </form>
