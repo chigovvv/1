@@ -30,7 +30,9 @@ a:active{
   color: white  ;
 }
 
-
+.pic{
+  transform: rotate(30deg) scale(1.5) skew(10deg, 10deg) ;
+}
 .active:active,
 .activeb:active{
   background-color: #F1EDEA;
@@ -446,8 +448,6 @@ a {
     transform: rotate(360deg);
   }
 } 
-
-
 
 
 .cremdiv{
