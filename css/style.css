@@ -3,6 +3,13 @@
   margin: 0;
   padding: 0;
 } 
+p::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+a::selection{
+  background-color: #E5F4F1;
+}
 html {
   box-sizing: border-box;
   overflow-x: hidden;
@@ -143,7 +150,6 @@ a {
 .background4 {
   margin-left: 15px;
   padding-top: 20px;
-  overflow-x: hidden;
 }
 
 .backgroundfooter{
