@@ -3,12 +3,37 @@
   margin: 0;
   padding: 0;
 } 
-p::selection,
-h1::selection,
-h2::selection,
-h3::selection,
-a::selection{
+::selection{
   background-color: #E5F4F1;
+}
+
+a:hover{
+  color: #6cd1c4;
+  transition: 0.3s;
+}
+
+a:active{
+  color: #afded7;
+}
+
+:focus{
+  color: rgb(81, 175, 246);
+}
+
+.active:hover,
+.activeb:hover{
+  background-color:  #6cd1c4;
+  cursor: pointer;
+  transform: scale(1.1) rotate(360deg);
+  box-shadow: 5px 5px 5px #6cd1c4;
+  transition: 0.5s;
+  color: white  ;
+}
+
+
+.active:active,
+.activeb:active{
+  background-color: #F1EDEA;
 }
 html {
   box-sizing: border-box;
@@ -365,6 +390,68 @@ a {
   max-width: 100%;
   grid-area: a;
 }
+
+.bestdiv-loader{
+  position: relative;
+}
+
+#third-bestdiv{
+  /* opacity: 0; */
+  animation: ani 5s linear;
+
+}
+
+
+@keyframes ani{
+  50%{opacity: 0;}
+  100%{opacity: 1;}
+}
+
+@keyframes ani1{
+  50%{opacity: 1;}
+  100%{opacity: 0;
+  display: none;}
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+  position: absolute;
+  top: 45%;
+  left: 45%;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #FF3D00;
+  width: 16px;
+  height: 16px;
+  transform: translate(-50%, 50%);
+  border-radius: 50%;
+  animation: ani1 5s;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+
+
+
 .cremdiv{
   display: grid;
   align-items: end;

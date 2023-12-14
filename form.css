@@ -4,9 +4,16 @@
     font-size: 16px;
     color: black;
 }
+.form_input[type ="text"],
+.form_input[type ="text"],
 .form_input[type ="text"]{
-    font-family: 'Kalnia', serif;
-    font-size: 16px;
+    font-size: 1.2em;
+    font-style: italic;
+}
+input::placeholder {
+    color: red;
+    font-size: 1em;
+    font-style: italic;
 }
 .form_wrapper{
     font-size: 16px;
@@ -22,6 +29,12 @@
     padding: 40px 20px 20px 20px;
     margin: 10px 0;
 }
+
+.time p:nth-child(even){
+    color: red;
+}
+
+
 .pol{
     text-align: center;
 }
