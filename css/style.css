@@ -401,6 +401,7 @@ a {
 
 @keyframes ani{
   0%{opacity: 0;}
+  50%{opacity: 0;}
   100%{opacity: 1;}
 }
 
@@ -699,7 +700,8 @@ body{
     /* width: 40%; */
     bottom: 2em;
     left: 50%;
-    translate: -50% 0;
+    transform: translate(-50%);
+
   }
   .div1{
     display: flex;

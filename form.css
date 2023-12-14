@@ -106,7 +106,7 @@ input::placeholder {
     color: #1a73a8;
     transition: 0.3s;
     left: 50%;
-    translate: -50% 0;
+    transform: translate(-50% 0);
     font-size: 18px;
 }
 .form_input{
