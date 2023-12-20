@@ -356,7 +356,7 @@ a {
 }
 
 .end{
-  color: #959595;
+  color: black;
   margin-left: 15px;
   margin-bottom: 5px;
 }
@@ -396,7 +396,19 @@ a {
 .bestdiv-loader{
   position: relative;
 }
-
+.skiplink{
+  display: block;
+  position: absolute;
+  top: 0; 
+  left: 24%;
+  padding: 10px 15px;
+  color: black;
+  transform: translateY(-100%);
+}
+.skiplink:focus{
+  transform: translateY(20%);
+  color: black;
+}
 
 
 @keyframes ani{

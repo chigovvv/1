@@ -32,11 +32,11 @@ input:required::placeholder{
 .time p:nth-child(even){
     color: orange;
 }
-.checked:checked + span{
+.checked:checked + label{
     color: green;
     font-size: 20px;
 }
-.form_radio:checked + span{
+.form_radio:checked + label{
     color: green;
     font-size: 20px;
 }
@@ -55,7 +55,7 @@ input:required::placeholder{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    margin-bottom: 10rem;
 }
 .form{
     width: 450px;

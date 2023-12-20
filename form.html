@@ -30,49 +30,49 @@
         <form class="form" method="post" action="//httpbin.org/post" name="text_form">
             <h1 class="form_title">Форма</h1>
             <fieldset class="form_div_wrapper"> 
+                <legend>Личная информация</legend>
                 <div class="form_group">
-                    <input type="text" class="form_input" placeholder="Иван" name="name" required>
-                    <label class="form_label">Имя*</label>
+                    <input type="text" class="form_input" placeholder="Иван" name="name" id="name" required>
+                    <label class="form_label" for="name">Имя*</label>
                 </div>
                 <div class="form_group">
-                    <input type="text" id="name" class="form_input " name="last_name" placeholder="Иванов" required>
-                    <label class="form_label lastname" for="#name">Фамилия*</label>
+                    <input type="text" id="lastname" class="form_input " name="last_name" placeholder="Иванов" required>
+                    <label class="form_label lastname" for="lastname">Фамилия*</label>
                 </div>
-                <div class="form_div_wrapper div_pol centr">
-                    <label for="" class="pol form_label">Пол*</label>
-                    <p>
-                        <input type="radio" class="form_radio" name="pol_m"><span> Женский </span>
-                        <input type="radio" class="form_radio" name="pol_zh"><span> Мужской</span>
-                    </p>
-                </div>
+                <fieldset class="form_div_wrapper div_pol centr">
+                    <legend for="" class="pol form_label">Пол*</legend>
+                    <label for="pol_m"><input type="radio" class="form_radio" id="pol_m" name="pol" value="pol_m"> Женский </label>
+                    <label for="pol_zh"><input type="radio" class="form_radio" name="pol" id="popl_zh" value="pol_zh"> Мужской</label>
+                </fieldset>
                 <div class="form_group">
                     <input id="date" type="date" class=" form_input" name="date">
-                    <label for="#date" class="form_label date" >Дата рождения*</label>
+                    <label for="date" class="form_label date" >Дата рождения*</label>
                 </div>
             </fieldset>
-            <div class="form_div_wrapper">
+            <fieldset class="form_div_wrapper">
+                <legend>Приватные данные</legend>
                 <div class="form_group">
-                    <input type="email" class="form_input " name="E-mail" placeholder="example@example.com" required >
-                    <label class="form_label email">E-mail*</label>
+                    <input type="email" class="form_input " id="email" name="E-mail" placeholder="example@example.com" required >
+                    <label class="form_label email" for="email">E-mail*</label>
                 </div>
                 <div class="form_group">
-                    <input type="password" class="form_input " name="password" placeholder="Password" required>
-                    <label class="form_label pass">Пароль*</label>
+                    <input type="password" class="form_input " id="pass" name="password" placeholder="Password" required>
+                    <label class="form_label pass" for="pass">Пароль*</label>
                 </div>
                 <div class="form_group">
-                    <input type="tel" class="form_input " name="telephone" placeholder="+79999999999" required>
-                    <label class="form_label tel">Телефон*</label>
+                    <input type="tel" class="form_input " id="tel" name="telephone" placeholder="+79999999999" required>
+                    <label for="tel" class="form_label tel">Телефон*</label>
                 </div>
                 <div class="form_div_wrapper">
-                    <label for=""  class="form_wrapper">Удобное время для связи:</label>
-                    <fieldset class="time fieldset_form"> 
-                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub" value="06-12"><span> 6:00 - 12:00 </span></p>
-                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub" value="12-18"> <span>12:00 - 18:00 </span></p>
-                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub" value="18-00"> <span>18:00 - 00:00 </span></p>
-                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub" value="00-06"> <span>00:00 - 6:00 </span></p>
+                    <fieldset class="time fieldset_form">   
+                        <legend for=""  class="form_wrapper">Удобное время для связи:</legend>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub" value="06-12" id="6"><label for="6"> 6:00 - 12:00 </label></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub" value="12-18" id="12"><label for="12"> 12:00 - 18:00 </label></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub" value="18-00" id="18"><label for="18"> 18:00 - 00:00 </label></p>
+                        <p class="form_time_p"><input class="checked" type="checkbox" name="sub" value="00-06" id="0"><label for="0"> 00:00 - 6:00 </label></p>
                     </div>
                 </div>
-            </div>
+            </fieldset>
             <!-- <p  class="form_wrapper"> 
                 <label for="">Time</label>
                 <input type="time" class="time">
